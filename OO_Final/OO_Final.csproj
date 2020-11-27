@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FakeUserRepository.cs" />
+    <Compile Include="IUserRepository.cs" />
     <Compile Include="recipe.cs" />
     <Compile Include="formWelcome.cs">
       <SubType>Form</SubType>
@@ -62,7 +64,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="schedule.cs" />
-    <Compile Include="user.cs" />
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="formWelcome.resx">
       <DependentUpon>formWelcome.cs</DependentUpon>
     </EmbeddedResource>

@@ -33,7 +33,6 @@
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonNewUser = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -66,6 +65,7 @@
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(231, 117);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(569, 38);
             this.textBoxPassword.TabIndex = 3;
             // 
@@ -79,15 +79,6 @@
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.button1_Click);
             // 
-            // buttonNewUser
-            // 
-            this.buttonNewUser.Location = new System.Drawing.Point(21, 189);
-            this.buttonNewUser.Name = "buttonNewUser";
-            this.buttonNewUser.Size = new System.Drawing.Size(229, 63);
-            this.buttonNewUser.TabIndex = 5;
-            this.buttonNewUser.Text = "New User";
-            this.buttonNewUser.UseVisualStyleBackColor = true;
-            // 
             // buttonLogin
             // 
             this.buttonLogin.Location = new System.Drawing.Point(571, 189);
@@ -96,6 +87,7 @@
             this.buttonLogin.TabIndex = 6;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // FormLogin
             // 
@@ -103,7 +95,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 304);
             this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.buttonNewUser);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUserName);
@@ -111,6 +102,7 @@
             this.Controls.Add(this.labelUserName);
             this.Name = "FormLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,7 +115,6 @@
         private System.Windows.Forms.TextBox textBoxUserName;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.Button buttonNewUser;
         private System.Windows.Forms.Button buttonLogin;
     }
 }

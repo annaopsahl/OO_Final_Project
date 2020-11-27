@@ -8,3 +8,14 @@ C:\Users\1999a\OneDrive\Documents\DSU Fall 2020\Object Oriented\OO_Final\OO_Fina
 C:\Users\1999a\OneDrive\Documents\DSU Fall 2020\Object Oriented\OO_Final\OO_Final\obj\Debug\OO_Final.csproj.CoreCompileInputs.cache
 C:\Users\1999a\OneDrive\Documents\DSU Fall 2020\Object Oriented\OO_Final\OO_Final\obj\Debug\OO_Final.exe
 C:\Users\1999a\OneDrive\Documents\DSU Fall 2020\Object Oriented\OO_Final\OO_Final\obj\Debug\OO_Final.pdb
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\bin\Debug\OO_Final.exe.config
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\bin\Debug\OO_Final.exe
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\bin\Debug\OO_Final.pdb
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.csprojAssemblyReference.cache
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormWelcome.resources
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormLogin.resources
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.Properties.Resources.resources
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.csproj.GenerateResource.cache
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.csproj.CoreCompileInputs.cache
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.exe
+C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.pdb

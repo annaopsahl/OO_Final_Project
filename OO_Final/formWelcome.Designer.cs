@@ -103,6 +103,7 @@
             this.Controls.Add(this.buttonLogOut);
             this.Name = "FormWelcome";
             this.Text = "Welcome! ";
+            this.Load += new System.EventHandler(this.FormWelcome_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
