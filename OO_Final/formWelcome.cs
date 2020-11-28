@@ -36,7 +36,14 @@ namespace OO_Final
                 Close();
                 return;
             }
-            // change text if needed
+            DateTime today = DateTime.Today;
+            string date = today.DayOfWeek + ", " + today.Month.ToString() + "/" + today.Day.ToString() + "/" + today.Year.ToString();
+            labelDate.Text = date;
+        }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

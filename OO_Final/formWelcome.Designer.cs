@@ -32,8 +32,9 @@
             this.buttonViewSchedule = new System.Windows.Forms.Button();
             this.buttonNewSchedule = new System.Windows.Forms.Button();
             this.buttonViewGroceryList = new System.Windows.Forms.Button();
-            this.labelCurrentSchedule = new System.Windows.Forms.Label();
+            this.labelTodaysDate = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
+            this.buttonAddRecipe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonLogOut
@@ -44,6 +45,7 @@
             this.buttonLogOut.TabIndex = 0;
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // buttonViewSchedule
             // 
@@ -72,31 +74,41 @@
             this.buttonViewGroceryList.Text = "ViewGroceryList";
             this.buttonViewGroceryList.UseVisualStyleBackColor = true;
             // 
-            // labelCurrentSchedule
+            // labelTodaysDate
             // 
-            this.labelCurrentSchedule.AutoSize = true;
-            this.labelCurrentSchedule.Location = new System.Drawing.Point(51, 56);
-            this.labelCurrentSchedule.Name = "labelCurrentSchedule";
-            this.labelCurrentSchedule.Size = new System.Drawing.Size(350, 32);
-            this.labelCurrentSchedule.TabIndex = 4;
-            this.labelCurrentSchedule.Text = "Current Schedule Starting:";
+            this.labelTodaysDate.AutoSize = true;
+            this.labelTodaysDate.Location = new System.Drawing.Point(36, 49);
+            this.labelTodaysDate.Name = "labelTodaysDate";
+            this.labelTodaysDate.Size = new System.Drawing.Size(212, 32);
+            this.labelTodaysDate.TabIndex = 4;
+            this.labelTodaysDate.Text = "Today\'s date is:";
             // 
             // labelDate
             // 
             this.labelDate.AutoSize = true;
-            this.labelDate.Location = new System.Drawing.Point(407, 56);
+            this.labelDate.Location = new System.Drawing.Point(254, 49);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(291, 32);
+            this.labelDate.Size = new System.Drawing.Size(100, 32);
             this.labelDate.TabIndex = 5;
-            this.labelDate.Text = "[No schedule created]";
+            this.labelDate.Text = "[blank]";
+            // 
+            // buttonAddRecipe
+            // 
+            this.buttonAddRecipe.Location = new System.Drawing.Point(800, 297);
+            this.buttonAddRecipe.Name = "buttonAddRecipe";
+            this.buttonAddRecipe.Size = new System.Drawing.Size(243, 46);
+            this.buttonAddRecipe.TabIndex = 7;
+            this.buttonAddRecipe.Text = "Add New Recipe";
+            this.buttonAddRecipe.UseVisualStyleBackColor = true;
             // 
             // FormWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1288, 384);
+            this.Controls.Add(this.buttonAddRecipe);
             this.Controls.Add(this.labelDate);
-            this.Controls.Add(this.labelCurrentSchedule);
+            this.Controls.Add(this.labelTodaysDate);
             this.Controls.Add(this.buttonViewGroceryList);
             this.Controls.Add(this.buttonNewSchedule);
             this.Controls.Add(this.buttonViewSchedule);
@@ -115,7 +127,8 @@
         private System.Windows.Forms.Button buttonViewSchedule;
         private System.Windows.Forms.Button buttonNewSchedule;
         private System.Windows.Forms.Button buttonViewGroceryList;
-        private System.Windows.Forms.Label labelCurrentSchedule;
+        private System.Windows.Forms.Label labelTodaysDate;
         private System.Windows.Forms.Label labelDate;
+        private System.Windows.Forms.Button buttonAddRecipe;
     }
 }
