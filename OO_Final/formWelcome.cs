@@ -14,6 +14,9 @@ namespace OO_Final
     {
         private User _CurrentUser = new User();
         private FakeUserRepository _Users = new FakeUserRepository();
+        private FakeRecipeRepository _Recipes = new FakeRecipeRepository();
+        private FakeScheduleRepository _Schedules = new FakeScheduleRepository();
+        
         public FormWelcome()
         {
             InitializeComponent();
@@ -43,7 +46,29 @@ namespace OO_Final
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
+            _CurrentUser.isLoggedIn = false;
             this.Close();
+        }
+
+        private void buttonAddRecipe_Click(object sender, EventArgs e)
+        {
+            FormAddRecipe form = new FormAddRecipe(_CurrentUser, _Users, _Recipes);
+            form.ShowDialog();
+            form.Dispose();
+        }
+
+        private void buttonViewRecipes_Click(object sender, EventArgs e)
+        {
+            FormViewRecipes form = new FormViewRecipes(_Recipes);
+            form.ShowDialog();
+            form.Dispose();
+        }
+
+        private void buttonNewSchedule_Click(object sender, EventArgs e)
+        {
+            FormNewSchedule form = new FormNewSchedule(_Recipes, _Users, _CurrentUser, _Schedules);
+            form.ShowDialog();
+            form.Dispose();
         }
     }
 }

@@ -20,6 +20,22 @@ namespace OO_Final
             if(_Recipes.Count == 0)
             {
                 // add recipes here
+                Recipe temp = new Recipe();
+                temp.title = "Spaghetti";
+                temp.instructions = "Cook noodles according to directions on box. Cook meat. Heat sauce and meat on stove.";
+                Ingredient ing = new Ingredient();
+                ing.amount = "1 can";
+                ing.name = "Spaghetti Sauce";
+                temp.ingredients.Add(ing);
+
+                ing.amount = "1 lb";
+                ing.name = "Ground beef";
+                temp.ingredients.Add(ing);
+
+                ing.amount = "1 box";
+                ing.name = "Spaghetti Noodles";
+                temp.ingredients.Add(ing);
+                Add(temp);
             }
         }
 
@@ -60,7 +76,7 @@ namespace OO_Final
         }
 
         // check if duplicate title
-        public bool IsDuplicateTitle(string recipeTitle)
+        private bool IsDuplicateTitle(string recipeTitle)
         {
             bool isDup = false;
             foreach(Recipe r in _Recipes)

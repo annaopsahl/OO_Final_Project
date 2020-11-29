@@ -19,3 +19,7 @@ C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.csproj.
 C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.csproj.CoreCompileInputs.cache
 C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.exe
 C:\Users\1999a\Source\Repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.pdb
+C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormAddIngredient.resources
+C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormAddRecipe.resources
+C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormViewRecipes.resources
+C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormNewSchedule.resources

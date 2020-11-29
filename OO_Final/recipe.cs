@@ -11,6 +11,6 @@ namespace OO_Final
         public User creator { get; set; }
         public string title { get; set; }
         public string instructions { get; set; }
-        public List<Ingredient> ingredients;
+        public List<Ingredient> ingredients = new List<Ingredient>();
     }
 }

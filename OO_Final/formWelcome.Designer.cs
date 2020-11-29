@@ -35,13 +35,14 @@
             this.labelTodaysDate = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
             this.buttonAddRecipe = new System.Windows.Forms.Button();
+            this.buttonViewRecipes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonLogOut
             // 
             this.buttonLogOut.Location = new System.Drawing.Point(1101, 297);
             this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(146, 50);
+            this.buttonLogOut.Size = new System.Drawing.Size(146, 75);
             this.buttonLogOut.TabIndex = 0;
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
@@ -64,6 +65,7 @@
             this.buttonNewSchedule.TabIndex = 2;
             this.buttonNewSchedule.Text = "New Schedule";
             this.buttonNewSchedule.UseVisualStyleBackColor = true;
+            this.buttonNewSchedule.Click += new System.EventHandler(this.buttonNewSchedule_Click);
             // 
             // buttonViewGroceryList
             // 
@@ -94,18 +96,30 @@
             // 
             // buttonAddRecipe
             // 
-            this.buttonAddRecipe.Location = new System.Drawing.Point(800, 297);
+            this.buttonAddRecipe.Location = new System.Drawing.Point(724, 297);
             this.buttonAddRecipe.Name = "buttonAddRecipe";
-            this.buttonAddRecipe.Size = new System.Drawing.Size(243, 46);
+            this.buttonAddRecipe.Size = new System.Drawing.Size(319, 75);
             this.buttonAddRecipe.TabIndex = 7;
             this.buttonAddRecipe.Text = "Add New Recipe";
             this.buttonAddRecipe.UseVisualStyleBackColor = true;
+            this.buttonAddRecipe.Click += new System.EventHandler(this.buttonAddRecipe_Click);
+            // 
+            // buttonViewRecipes
+            // 
+            this.buttonViewRecipes.Location = new System.Drawing.Point(355, 297);
+            this.buttonViewRecipes.Name = "buttonViewRecipes";
+            this.buttonViewRecipes.Size = new System.Drawing.Size(319, 75);
+            this.buttonViewRecipes.TabIndex = 8;
+            this.buttonViewRecipes.Text = "View All Recipes";
+            this.buttonViewRecipes.UseVisualStyleBackColor = true;
+            this.buttonViewRecipes.Click += new System.EventHandler(this.buttonViewRecipes_Click);
             // 
             // FormWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1288, 384);
+            this.ClientSize = new System.Drawing.Size(1288, 415);
+            this.Controls.Add(this.buttonViewRecipes);
             this.Controls.Add(this.buttonAddRecipe);
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.labelTodaysDate);
@@ -130,5 +144,6 @@
         private System.Windows.Forms.Label labelTodaysDate;
         private System.Windows.Forms.Label labelDate;
         private System.Windows.Forms.Button buttonAddRecipe;
+        private System.Windows.Forms.Button buttonViewRecipes;
     }
 }

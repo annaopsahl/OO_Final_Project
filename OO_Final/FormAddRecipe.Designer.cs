@@ -53,6 +53,7 @@
             this.textTitle.Name = "textTitle";
             this.textTitle.Size = new System.Drawing.Size(754, 38);
             this.textTitle.TabIndex = 1;
+            this.textTitle.TextChanged += new System.EventHandler(this.textTitle_TextChanged);
             // 
             // labelInstructions
             // 
@@ -73,12 +74,14 @@
             // 
             // buttonAddIngredients
             // 
+            this.buttonAddIngredients.Enabled = false;
             this.buttonAddIngredients.Location = new System.Drawing.Point(203, 462);
             this.buttonAddIngredients.Name = "buttonAddIngredients";
             this.buttonAddIngredients.Size = new System.Drawing.Size(754, 61);
             this.buttonAddIngredients.TabIndex = 4;
             this.buttonAddIngredients.Text = "Add Ingredients";
             this.buttonAddIngredients.UseVisualStyleBackColor = true;
+            this.buttonAddIngredients.Click += new System.EventHandler(this.buttonAddIngredients_Click);
             // 
             // buttonSave
             // 
@@ -88,6 +91,7 @@
             this.buttonSave.TabIndex = 5;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonCancel
             // 
@@ -97,17 +101,18 @@
             this.buttonCancel.TabIndex = 6;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // labelDone
             // 
             this.labelDone.AutoSize = true;
-            this.labelDone.Enabled = false;
             this.labelDone.ForeColor = System.Drawing.Color.Crimson;
             this.labelDone.Location = new System.Drawing.Point(106, 477);
             this.labelDone.Name = "labelDone";
             this.labelDone.Size = new System.Drawing.Size(91, 32);
             this.labelDone.TabIndex = 7;
             this.labelDone.Text = "Done!";
+            this.labelDone.Visible = false;
             // 
             // FormAddRecipe
             // 
@@ -124,6 +129,7 @@
             this.Controls.Add(this.labelTitle);
             this.Name = "FormAddRecipe";
             this.Text = "Add Recipe";
+            this.Load += new System.EventHandler(this.FormAddRecipe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
