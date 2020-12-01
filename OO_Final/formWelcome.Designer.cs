@@ -56,6 +56,7 @@
             this.buttonViewSchedule.TabIndex = 1;
             this.buttonViewSchedule.Text = "View Schedule";
             this.buttonViewSchedule.UseVisualStyleBackColor = true;
+            this.buttonViewSchedule.Click += new System.EventHandler(this.buttonViewSchedule_Click);
             // 
             // buttonNewSchedule
             // 
@@ -75,6 +76,7 @@
             this.buttonViewGroceryList.TabIndex = 3;
             this.buttonViewGroceryList.Text = "ViewGroceryList";
             this.buttonViewGroceryList.UseVisualStyleBackColor = true;
+            this.buttonViewGroceryList.Click += new System.EventHandler(this.buttonViewGroceryList_Click);
             // 
             // labelTodaysDate
             // 

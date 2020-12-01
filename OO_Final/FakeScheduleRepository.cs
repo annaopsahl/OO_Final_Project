@@ -67,5 +67,18 @@ namespace OO_Final
 
             return isDup;
         }
+
+        public Schedule GetScheduleByName(string name)
+        {
+            foreach(Schedule s in _Schedules)
+            {
+                if(s.name == name)
+                {
+                    return s;
+                }
+            }
+
+            return null;
+        }
     }
 }

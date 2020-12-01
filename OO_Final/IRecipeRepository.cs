@@ -11,5 +11,6 @@ namespace OO_Final
         string Add(Recipe recipe);
         List<Recipe> GetAll();
         string Remove(Recipe recipe);
+        Recipe GetRecipeByName(string name);
     }
 }

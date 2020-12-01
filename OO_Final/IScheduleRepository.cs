@@ -11,5 +11,6 @@ namespace OO_Final
         string Add(Schedule schedule);
         List<Schedule> GetAll();
         string Remove(Schedule schedule);
+        Schedule GetScheduleByName(string name);
     }
 }

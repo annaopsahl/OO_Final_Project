@@ -23,3 +23,5 @@ C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormAdd
 C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormAddRecipe.resources
 C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormViewRecipes.resources
 C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormNewSchedule.resources
+C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormViewSchedule.resources
+C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormViewList.resources

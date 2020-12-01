@@ -70,5 +70,19 @@ namespace OO_Final
             form.ShowDialog();
             form.Dispose();
         }
+
+        private void buttonViewSchedule_Click(object sender, EventArgs e)
+        {
+            FormViewSchedule form = new FormViewSchedule(_Recipes, _Users, _CurrentUser, _Schedules);
+            form.ShowDialog();
+            form.Dispose();
+        }
+
+        private void buttonViewGroceryList_Click(object sender, EventArgs e)
+        {
+            FormViewList form = new FormViewList(_Recipes, _Users, _CurrentUser, _Schedules);
+            form.ShowDialog();
+            form.Dispose();
+        }
     }
 }

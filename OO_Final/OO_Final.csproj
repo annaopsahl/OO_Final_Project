@@ -115,8 +115,14 @@
     <EmbeddedResource Include="FormNewSchedule.resx">
       <DependentUpon>FormNewSchedule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormViewList.resx">
+      <DependentUpon>FormViewList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormViewRecipes.resx">
       <DependentUpon>FormViewRecipes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewSchedule.resx">
+      <DependentUpon>FormViewSchedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formWelcome.resx">
       <DependentUpon>formWelcome.cs</DependentUpon>

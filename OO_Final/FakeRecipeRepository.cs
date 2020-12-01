@@ -28,13 +28,15 @@ namespace OO_Final
                 ing.name = "Spaghetti Sauce";
                 temp.ingredients.Add(ing);
 
-                ing.amount = "1 lb";
-                ing.name = "Ground beef";
-                temp.ingredients.Add(ing);
+                Ingredient ing1 = new Ingredient();
+                ing1.amount = "1 lb";
+                ing1.name = "Ground beef";
+                temp.ingredients.Add(ing1);
 
-                ing.amount = "1 box";
-                ing.name = "Spaghetti Noodles";
-                temp.ingredients.Add(ing);
+                Ingredient ing2 = new Ingredient();
+                ing2.amount = "1 box";
+                ing2.name = "Spaghetti Noodles";
+                temp.ingredients.Add(ing2);
                 Add(temp);
             }
         }
@@ -87,6 +89,21 @@ namespace OO_Final
                 }
             }
             return isDup;
+        }
+
+        public Recipe GetRecipeByName(string name)
+        {
+            Recipe ret = new Recipe();
+            ret.title = "";
+            foreach(Recipe r in _Recipes)
+            {
+                if(r.title == name)
+                {
+                    ret = r;
+                    return ret;
+                }
+            }
+            return ret;
         }
     }
 }

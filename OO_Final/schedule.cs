@@ -11,12 +11,12 @@ namespace OO_Final
         public User creator { get; set; }
         public string name { get; set; }
         // recipe list
-        public List<Recipe> Monday;
-        public List<Recipe> Tuesday;
-        public List<Recipe> Wednesday;
-        public List<Recipe> Thursday;
-        public List<Recipe> Friday;
-        public List<Recipe> Saturday;
-        public List<Recipe> Sunday;
+        public List<Recipe> Monday = new List<Recipe>();
+        public List<Recipe> Tuesday = new List<Recipe>();
+        public List<Recipe> Wednesday = new List<Recipe>();
+        public List<Recipe> Thursday = new List<Recipe>();
+        public List<Recipe> Friday = new List<Recipe>();
+        public List<Recipe> Saturday = new List<Recipe>();
+        public List<Recipe> Sunday = new List<Recipe>();
     }
 }
