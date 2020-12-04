@@ -25,3 +25,4 @@ C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormVie
 C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormNewSchedule.resources
 C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormViewSchedule.resources
 C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormViewList.resources
+C:\Users\1999a\source\repos\OO_Final_Project\OO_Final\obj\Debug\OO_Final.FormDisplayRecipe.resources

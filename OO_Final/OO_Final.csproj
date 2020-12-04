@@ -61,6 +61,12 @@
     <Compile Include="FormAddRecipe.Designer.cs">
       <DependentUpon>FormAddRecipe.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDisplayRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisplayRecipe.Designer.cs">
+      <DependentUpon>FormDisplayRecipe.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormNewSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddRecipe.resx">
       <DependentUpon>FormAddRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDisplayRecipe.resx">
+      <DependentUpon>FormDisplayRecipe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNewSchedule.resx">
       <DependentUpon>FormNewSchedule.cs</DependentUpon>

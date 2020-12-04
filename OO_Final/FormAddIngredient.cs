@@ -52,13 +52,15 @@ namespace OO_Final
                     labelIngredientAdded.Visible = true;
                 }
             }
+            textBoxAmount.Clear();
+            textBoxIngredient.Clear();
         }
 
         private void buttonDone_Click(object sender, EventArgs e)
         {
             if (textBoxAmount.Text == "" || textBoxIngredient.Text == "")
             {
-                MessageBox.Show("Please fill in all fields.");
+                // MessageBox.Show("Please fill in all fields.");
             }
             else
             {

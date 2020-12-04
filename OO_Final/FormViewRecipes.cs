@@ -20,13 +20,26 @@ namespace OO_Final
             _Recipes = repo;
             foreach(Recipe r in _Recipes.GetAll())
             {
-                dataGridView1.Rows.Add(r.title, r.instructions);
+                comboBoxRecipes.Items.Add(r.title);
             }
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormViewRecipes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonView_Click(object sender, EventArgs e)
+        {
+            string recipe = comboBoxRecipes.SelectedItem.ToString();
+            FormDisplayRecipe form = new FormDisplayRecipe(recipe, _Recipes);
+            form.ShowDialog();
+            form.Dispose();
         }
     }
 }

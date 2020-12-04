@@ -20,6 +20,16 @@ namespace OO_Final
             if(_Recipes.Count == 0)
             {
                 // add recipes here
+                Recipe temp2 = new Recipe();
+                temp2.title = "Leftovers";
+                temp2.instructions = " ";
+                Add(temp2);
+
+                Recipe temp3 = new Recipe();
+                temp3.title = "Dining out";
+                temp3.instructions = " ";
+                Add(temp3);
+
                 Recipe temp = new Recipe();
                 temp.title = "Spaghetti";
                 temp.instructions = "Cook noodles according to directions on box. Cook meat. Heat sauce and meat on stove.";
@@ -37,7 +47,7 @@ namespace OO_Final
                 ing2.amount = "1 box";
                 ing2.name = "Spaghetti Noodles";
                 temp.ingredients.Add(ing2);
-                Add(temp);
+                Add(temp);                
             }
         }
 

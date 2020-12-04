@@ -18,6 +18,7 @@ namespace OO_Final
         {
             InitializeComponent();
             _CurrentUser = new User();
+            this.AcceptButton = buttonLogin;
         }
 
         private void button1_Click(object sender, EventArgs e)

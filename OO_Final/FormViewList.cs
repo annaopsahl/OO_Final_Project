@@ -47,7 +47,7 @@ namespace OO_Final
         {
             _CurrSchedule = _Schedules.GetScheduleByName(comboBoxSchedule.SelectedItem.ToString());
 
-            for(int k = 0; k <= 3; k++)
+            for(int k = 0; k < 3; k++)
             {
                 foreach (Ingredient i in _CurrSchedule.Monday[k].ingredients)
                 {
@@ -78,8 +78,6 @@ namespace OO_Final
                     dataGridView1.Rows.Add(i.amount, i.name);
                 }
             }
-            
-           
         }
     }
 }
