@@ -326,9 +326,15 @@ namespace OO_Final
             }
             _ToAdd.Sunday.Add(temp);
 
-            _Schedules.Add(_ToAdd);
-
-            this.Close();
+            string result = _Schedules.Add(_ToAdd);
+            if(result != FakeScheduleRepository.NO_ERROR)
+            {
+                MessageBox.Show(result, "error");
+            }
+            else
+            {
+                this.Close();
+            }
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
